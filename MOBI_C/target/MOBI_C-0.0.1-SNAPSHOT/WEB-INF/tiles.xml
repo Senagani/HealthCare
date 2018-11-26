@@ -1,0 +1,34 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base" template="/pages/layout.jsp">
+		<put-attribute name="header" value="/pages/header.jsp"/>
+		<put-attribute name="menu" value="/pages/menu.jsp"/>
+		<put-attribute name="body" value=" "/>
+		<put-attribute name="footer" value="/pages/footer.jsp" />
+	</definition>
+	<definition name="Dashboard" extends="base">
+		<put-attribute name="body" value="/pages/Dashboard.jsp" />
+	</definition>
+	<definition name="adduser" extends="base">
+		<put-attribute name="body" value="/pages/adduser.jsp" />
+	</definition>
+	<definition name="alluser" extends="base">
+		<put-attribute name="body" value="/pages/alluser.jsp" />
+	</definition>
+	<definition name="edit" extends="base">
+		<put-attribute name="body" value="/pages/edit.jsp" />
+	</definition>
+	<definition name="payment" extends="base">
+		<put-attribute name="body" value="/pages/payment.jsp" />
+	</definition>
+	<definition name="allpaymentdetails" extends="base">
+		<put-attribute name="body" value="/pages/allpaymentdetails.jsp" />
+	</definition>
+	<definition name="photo" extends="base">
+		<put-attribute name="body" value="/pages/photo.jsp" />
+	</definition>
+	<definition name="displayimage" extends="base">
+		<put-attribute name="body" value="/pages/displayimage.jsp" />
+	</definition>
+
+</tiles-definitions>
